@@ -11,6 +11,7 @@ horas_meta = []
 
 for horas in horas_reportadas:
     if horas >= 3:
+        horas_meta.append(horas)
         # TODO: agregue a horas_meta el dato que cumple la condición.
         pass
 
