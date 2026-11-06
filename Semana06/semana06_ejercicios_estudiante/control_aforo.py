@@ -147,14 +147,6 @@ if aceptados:
     menor = min(aceptados)
     mayor = max(aceptados)
 
-    #for grupo in aceptados:
-        #total_admitido += grupo
-
-        #if grupo < menor:
-            #menor = grupo
-
-        #if grupo > mayor:
-        #mayor = grupo
     porcentaje = (total_admitido / capacidad) * 100
 else:
     menor = 0
