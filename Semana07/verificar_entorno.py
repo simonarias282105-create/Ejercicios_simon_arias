@@ -4,7 +4,7 @@
 # Su uso se explicará con detalle cuando se estudien los módulos.
 import sys
 
-print("Python ejecutó este archivo correctamente")
+print("Python ejecutó este archivo correctamente otra vez ")
 print("Versión de Python:", sys.version.split()[0])
 print("Ruta del intérprete:", sys.executable)
 

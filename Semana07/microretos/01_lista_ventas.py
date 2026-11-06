@@ -8,6 +8,9 @@ ventas = [85000, 92000, 78000]
 print("Venta del segundo día:", ventas[1])
 print("Total inicial:", sum(ventas))
 
+diferencia = 100000 - ventas[1]
+ventas[1] = ventas[1] + diferencia  
+
 # La venta del segundo día se corrigió de 92000 a 100000.
 # TODO: actualice la posición adecuada con una asignación por índice.
 
