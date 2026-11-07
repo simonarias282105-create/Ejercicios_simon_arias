@@ -1,8 +1,7 @@
 """Caso 3: comparación de precios de un producto en cinco ferias."""
 
 producto = "Tomate"
-precios1 = [900, 850, 1000, 950, 1200]
-precios= [100, 100, 100, 100, 100] 
+precios = [900, 850, 1000, 950, 1200]
 
 # TODO: Calcule promedio, mínimo, máximo y rango (máximo - mínimo).
 promedio = sum(precios) / len(precios)
