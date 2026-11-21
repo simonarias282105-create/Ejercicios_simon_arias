@@ -6,10 +6,11 @@ from lector_csv import cargar_atenciones
 def explorar_atenciones(atenciones):
     """Decisión 1: ¿qué leímos y cuántas atenciones hay?"""
     # Contamos las filas con un for. Luego miramos los campos de la primera.
+    total_atenciones = len(atenciones)
     cantidad = 0
     for atencion in atenciones:
         # Completamos aquí el contador.
-        pass
+        cantidad += 1
 
     print("Atenciones:", cantidad)
     print("Campos:", list(atenciones[0]))
