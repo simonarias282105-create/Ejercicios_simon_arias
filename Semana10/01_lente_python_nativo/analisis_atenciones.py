@@ -14,6 +14,8 @@ def explorar_atenciones(atenciones):
 
     print("Atenciones:", cantidad)
     print("Campos:", list(atenciones[0]))
+    print('Campos: ', list(atenciones[0]))
+    print('Tipo de datos: ', type(atenciones[0])) 
 
 
 def contar_categorias(atenciones):
@@ -24,8 +26,16 @@ def contar_categorias(atenciones):
 
     for atencion in atenciones:
         # Los nombres ya vienen uniformes en el CSV.
-        # Contamos cada categoría en su diccionario con .get().
-        pass
+        medicamento = atencion["medicamento"]
+        if medicamento not in medicamentos:
+            medicamentos[medicamento] = 0
+        medicamentos[medicamento] += 1
+
+        hospital = atencion["hospital"]
+        hospitales[hospital] = hospitales.get(hospital, 0) + 1
+
+        diagnostico = atencion["diagnostico"]
+        diagnosticos[diagnostico] = diagnosticos.get(diagnostico, 0) + 1
 
     print("Medicamentos:", medicamentos)
     print("Hospitales:", hospitales)
@@ -39,7 +49,10 @@ def concluir(atenciones):
 
     for atencion in atenciones:
         # Contamos la cédula y acumulamos los minutos de espera.
-        pass
+        cedula = atencion["cedula"]
+        visitas[cedula] = visitas.get(cedula, 0) + 1
+        total_minutos += atencion["minutos_espera"]
+        
 
     print("Personas:", len(visitas))
     print("Minutos de espera:", total_minutos)
