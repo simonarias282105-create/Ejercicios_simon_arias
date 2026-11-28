@@ -17,8 +17,8 @@ import pandas as pd
 
 def cargar_notas(ruta):
     """Lee el CSV y devuelve el DataFrame."""
-    notas = pd.read_csv(____)      # use el parámetro de la función
-    return ____                    # devuelva el DataFrame
+    notas = pd.read_csv(ruta)      # use el parámetro de la función
+    return notas                    # devuelva el DataFrame
 
 
 if __name__ == "__main__":

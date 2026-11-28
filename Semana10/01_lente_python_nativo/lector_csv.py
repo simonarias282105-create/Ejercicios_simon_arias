@@ -22,8 +22,7 @@ def cargar_atenciones(ruta_csv=ARCHIVO_CSV):
 
                 # TODO 1B: agregue cada fila a la lista atenciones.
                 atenciones.append(fila)
-                pass
-            
+
     except FileNotFoundError:
         print(f"No se encontró el archivo de datos: {ruta_csv}")
         raise SystemExit(1)
